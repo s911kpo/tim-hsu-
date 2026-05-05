@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jung Ting Hsu (Tim) · Strategic HRBP</title>
+<meta name="description" content="Strategic HRBP & People Leader. Cross-country HR leadership across Taiwan, China, India. Targeting tech industry HRBP roles.">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --nv-green:#76B900;
+  --nv-green-dim:#4a7400;
+  --nv-green-glow:rgba(118,185,0,0.15);
+  --nv-black:#0a0a0a;
+  --nv-dark:#111111;
+  --nv-card:#161616;
+  --nv-border:rgba(118,185,0,0.25);
+  --nv-text:#e8e8e8;
+  --nv-muted:#888;
+  --nv-white:#ffffff;
+}
+html{scroll-behavior:smooth}
+body{background:var(--nv-black);color:var(--nv-text);font-family:'DM Sans',sans-serif;font-size:17px;line-height:1.7;overflow-x:hidden}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.92);border-bottom:1px solid var(--nv-border);backdrop-filter:blur(12px);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--nv-white);letter-spacing:2px}
+.nav-logo span{color:var(--nv-green)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--nv-muted);text-decoration:none;font-size:14px;letter-spacing:1px;text-transform:uppercase;font-family:'Rajdhani',sans-serif;font-weight:600;transition:color 0.2s}
+.nav-links a:hover{color:var(--nv-green)}
+
+.hero{min-height:100vh;display:flex;align-items:center;padding:80px 2rem 2rem;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(118,185,0,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(118,185,0,0.04) 1px,transparent 1px);background-size:60px 60px;animation:gridShift 20s linear infinite}
+@keyframes gridShift{0%{background-position:0 0}100%{background-position:60px 60px}}
+.hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(118,185,0,0.08) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.hero-content{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(118,185,0,0.1);border:1px solid var(--nv-border);padding:6px 14px;border-radius:2px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--nv-green);letter-spacing:1px;margin-bottom:1.5rem}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--nv-green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.8)}}
+.hero h1{font-family:'Rajdhani',sans-serif;font-size:clamp(38px,5vw,66px);font-weight:700;line-height:1.05;color:var(--nv-white);letter-spacing:-1px;margin-bottom:0.5rem}
+.hero h1 .accent{color:var(--nv-green)}
+.hero-role{font-family:'Rajdhani',sans-serif;font-size:17px;font-weight:500;color:var(--nv-muted);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.5rem}
+.hero-desc{font-size:16px;color:#bbb;line-height:1.9;margin-bottom:2rem;max-width:480px}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--nv-green);color:#000;padding:13px 30px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;text-decoration:none;display:inline-block;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);transition:all 0.2s}
+.btn-primary:hover{background:#8fd100;transform:translateY(-1px)}
+.btn-secondary{background:transparent;color:var(--nv-green);padding:12px 30px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--nv-green);cursor:pointer;text-decoration:none;display:inline-block;transition:all 0.2s}
+.btn-secondary:hover{background:var(--nv-green-glow)}
+
+.hero-visual{display:flex;justify-content:center;align-items:center}
+.profile-frame{position:relative;width:320px;height:320px}
+.profile-hex{width:260px;height:260px;background:linear-gradient(135deg,var(--nv-card),var(--nv-dark));border:1px solid var(--nv-border);border-radius:4px;display:flex;align-items:center;justify-content:center;margin:0 auto;position:relative;overflow:hidden}
+.profile-hex::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--nv-green),transparent);animation:scanline 3s linear infinite}
+@keyframes scanline{0%{top:0;opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
+.profile-initials{font-family:'Rajdhani',sans-serif;font-size:72px;font-weight:700;color:var(--nv-green);letter-spacing:-2px}
+.corner{position:absolute;width:16px;height:16px;border-color:var(--nv-green);border-style:solid}
+.corner.tl{top:20px;left:20px;border-width:2px 0 0 2px}
+.corner.tr{top:20px;right:20px;border-width:2px 2px 0 0}
+.corner.bl{bottom:20px;left:20px;border-width:0 0 2px 2px}
+.corner.br{bottom:20px;right:20px;border-width:0 2px 2px 0}
+
+.stats{padding:2rem;background:var(--nv-dark);border-top:1px solid var(--nv-border);border-bottom:1px solid var(--nv-border)}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.stat-item{padding:1.25rem 1.5rem;border-right:1px solid rgba(118,185,0,0.15);text-align:center}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:'Rajdhani',sans-serif;font-size:40px;font-weight:700;color:var(--nv-green);line-height:1;display:block}
+.stat-label{font-size:12px;color:var(--nv-muted);letter-spacing:1px;text-transform:uppercase;margin-top:6px;display:block}
+
+section{padding:5rem 2rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-tag{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--nv-green);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.75rem;display:flex;align-items:center;gap:8px}
+.section-tag::before{content:'';display:block;width:24px;height:1px;background:var(--nv-green)}
+.section-title{font-family:'Rajdhani',sans-serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--nv-white);letter-spacing:-0.5px;margin-bottom:3rem}
+
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--nv-green),transparent)}
+.timeline-item{position:relative;margin-bottom:3rem;padding-left:1.5rem}
+.timeline-item::before{content:'';position:absolute;left:-2.5rem;top:6px;width:8px;height:8px;background:var(--nv-green);border-radius:50%;box-shadow:0 0 0 3px rgba(118,185,0,0.2)}
+.timeline-period{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--nv-green);letter-spacing:1px;margin-bottom:6px}
+.timeline-company{font-family:'Rajdhani',sans-serif;font-size:24px;font-weight:700;color:var(--nv-white);margin-bottom:4px}
+.timeline-role{font-size:15px;color:var(--nv-muted);margin-bottom:14px;letter-spacing:0.3px}
+.timeline-bullets{list-style:none;padding:0}
+.timeline-bullets li{font-size:15px;color:#bbb;line-height:1.85;padding:5px 0 5px 20px;position:relative;max-width:700px}
+.timeline-bullets li::before{content:'▸';position:absolute;left:0;color:var(--nv-green);font-size:11px;top:8px}
+.timeline-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tag{background:rgba(118,185,0,0.08);border:1px solid rgba(118,185,0,0.2);color:var(--nv-green);font-family:'JetBrains Mono',monospace;font-size:11px;padding:4px 10px;letter-spacing:0.5px}
+
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--nv-border);border:1px solid var(--nv-border)}
+.skill-card{background:var(--nv-card);padding:1.75rem;transition:background 0.2s}
+.skill-card:hover{background:#1c1c1c}
+.skill-icon{width:36px;height:36px;border:1px solid var(--nv-border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:16px}
+.skill-name{font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:600;color:var(--nv-white);margin-bottom:6px}
+.skill-desc{font-size:14px;color:var(--nv-muted);line-height:1.65}
+.skill-bar{margin-top:14px;height:2px;background:rgba(255,255,255,0.08);position:relative;overflow:hidden}
+.skill-bar-fill{height:100%;background:var(--nv-green);transform-origin:left;transform:scaleX(0);transition:transform 1.5s ease-out}
+
+.creds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.cred-card{background:var(--nv-card);border:1px solid var(--nv-border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:1rem;position:relative;overflow:hidden}
+.cred-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--nv-green)}
+.cred-icon{font-family:'Rajdhani',sans-serif;font-size:22px;font-weight:700;color:var(--nv-green);min-width:52px;text-align:center;padding-top:2px}
+.cred-name{font-family:'Rajdhani',sans-serif;font-size:15px;font-weight:600;color:var(--nv-white);line-height:1.3}
+.cred-org{font-size:13px;color:var(--nv-muted);margin-top:4px}
+
+.cta-section{background:var(--nv-dark);border-top:1px solid var(--nv-border);padding:5rem 2rem;text-align:center}
+.cta-section h2{font-family:'Rajdhani',sans-serif;font-size:clamp(28px,4vw,48px);font-weight:700;color:var(--nv-white);margin-bottom:1rem}
+.cta-section h2 span{color:var(--nv-green)}
+.cta-section p{color:var(--nv-muted);margin-bottom:2rem;font-size:16px}
+.contact-info{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.contact-item{font-family:'JetBrains Mono',monospace;font-size:13px;color:#666;letter-spacing:0.5px}
+.contact-item span{color:var(--nv-green)}
+.cta-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+
+footer{background:var(--nv-black);border-top:1px solid rgba(118,185,0,0.1);padding:1.5rem 2rem;text-align:center;font-family:'JetBrains Mono',monospace;font-size:12px;color:#444;letter-spacing:1px}
+footer span{color:var(--nv-green)}
+
+@media(max-width:900px){.creds-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+  .hero-content{grid-template-columns:1fr;gap:2rem}
+  .hero-visual{display:none}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .stat-item{border-bottom:1px solid rgba(118,185,0,0.1)}
+  .skills-grid{grid-template-columns:1fr}
+  .creds-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">JUNG TING <span>HSU</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#credentials">Credentials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="about">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-tag"><span class="dot"></span> Open to Strategic HRBP Leadership Roles</div>
+      <h1>Strategic <span class="accent">HRBP</span><br>& People Leader</h1>
+      <div class="hero-role">HR Manager · EV Components · Taichung, Taiwan</div>
+      <p class="hero-desc">跨國 HR 領導者，職涯橫跨台灣、中國、印度及歐美市場，深耕 HRBP 與 HR CoE 雙軌。擅長以組織診斷為起點，將人力資源策略精準轉譯為業務成長動能。數據驅動決策，具備端到端組織設計、人才管理與變革推動完整實戰能力。</p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="#contact" class="btn-secondary">Connect</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-frame">
+        <div class="profile-hex">
+          <span class="profile-initials">TIM</span>
+        </div>
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat-item"><span class="stat-num" data-target="6" data-suffix="+">0</span><span class="stat-label">Companies Led HR</span></div>
+    <div class="stat-item"><span class="stat-num" data-target="3" data-suffix="">0</span><span class="stat-label">Countries Operated</span></div>
+    <div class="stat-item"><span class="stat-num" data-target="50" data-suffix="%↓">0</span><span class="stat-label">Comm. Cost Reduction</span></div>
+    <div class="stat-item"><span class="stat-num" data-target="95" data-suffix="%">0</span><span class="stat-label">Employee Satisfaction</span></div>
+    <div class="stat-item"><span class="stat-num" data-target="90" data-suffix="%+">0</span><span class="stat-label">Production Retention</span></div>
+  </div>
+</div>
+
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-tag">Career Timeline</div>
+    <div class="section-title">Work Experience</div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-period">2024.01 — PRESENT</div>
+        <div class="timeline-company">Chengsenl Industrial</div>
+        <div class="timeline-role">HR Manager · Tier 2 EV Components Manufacturer · Taichung, Taiwan</div>
+        <ul class="timeline-bullets">
+          <li>主導跨廠區制度標準化變革，針對雙廠區因制度分歧導致的公平性爭議，以雙向溝通取代由上而下指令推動，歷時一年達成政策框架全面統一，跨廠主管溝通成本降低 50%</li>
+          <li>主導端到端 HRIS 導入專案（人事、組織、薪酬、考勤、表單五大模組），歷時九個月完成上線，以忘打卡申請為例每月節省逾 20 小時行政工時</li>
+          <li>診斷業務轉型缺口，主導 B 端（Husco）商用車市場轉型，執行 5 人跨部門轉調、薪酬對標數據說服經營層調升至 P75，招募 5 名關鍵職位零離職，支撐 B 端營收佔比提升至 30%</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="tag">HRIS Implementation</span><span class="tag">Change Management</span><span class="tag">Business Transformation</span><span class="tag">EV Industry</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">2019 — 2023</div>
+        <div class="timeline-company">Tymphany</div>
+        <div class="timeline-role">HRBP (Taiwan) → HR Project Manager CoE (China) · China & Taiwan</div>
+        <ul class="timeline-bullets">
+          <li>擔任車用音響新業務轉型跨國 HR 策略夥伴，執行 15 人跨部門轉調 + 15 名外部關鍵人才招募，組建 30 人跨國虛擬專案組織，支撐新業務貢獻營收提升 10–15%</li>
+          <li>自學 Power BI 並完成內部轉訓，建立自動化 HR 儀表板，月報產出從每月 10 日後壓縮至 5 日前，製作工時減少 50%；建立 Hi-Po 離職前兆指標，將高潛力人才離職率從 12% 降低至 7%</li>
+          <li>主導「小泰山專案」，設計以業務最高主管為星探的人才加速機制，遴選首屆 20 位 Young Talent，10 位通過高管評審並獲得晉升提報，建立可持續的高潛力人才供應鏈</li>
+          <li>針對中國四廠區主導端到端政策治理，統一 44 份一階政策與 87 份二階程序，SAP HCM 數據完整性達 95% 以上準確率</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="tag">Power BI</span><span class="tag">People Analytics</span><span class="tag">Talent Development</span><span class="tag">SAP HCM</span><span class="tag">Greenfield Build</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">2018 — 2019</div>
+        <div class="timeline-company">Foxconn</div>
+        <div class="timeline-role">HRBP India → HR CoE (China) · China & India</div>
+        <ul class="timeline-bullets">
+          <li>主導印度千人規模基地從零建構，領導 12 人在地 HR 團隊建構組織架構與薪酬體系，90 天完成 132 個關鍵職位填補，關鍵職位培訓合格率 100%</li>
+          <li>制定以女性勞動力為核心的人力配置策略，關鍵生產期間維持零罷工紀錄，100% 營運達成率，95% 員工滿意度</li>
+          <li>擔任跨廠區績效體系重構 PM，領導 10 人 HR 團隊統一推行至中國 10 廠區逾 2 萬名員工，內部晉升率從 10% 提升至 15%，關鍵人才離職率從 12% 降至 6%</li>
+          <li>主導「iProud」員工數位體驗平台，統籌 20 人跨職能團隊，HR 行政處理時間縮短 40%，上線後達成 30% 用戶黏著度</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="tag">Greenfield Build</span><span class="tag">Performance System</span><span class="tag">HR SaaS</span><span class="tag">India Operations</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-period">2017 — 2018</div>
+        <div class="timeline-company">Inditex (ZARA)</div>
+        <div class="timeline-role">HR Manager · Taipei, Taiwan</div>
+        <ul class="timeline-bullets">
+          <li>設計在地化銷售培訓策略，每月滾動更新培訓內容，帶動營收成長 20%、顧客服務滿意度提升 40%</li>
+          <li>主導全台 9 家門市全週期招募與留才體系建構，門市月度主動離職率從 10% 降低至 5%</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="tag">Training Design</span><span class="tag">Retail HR</span><span class="tag">Talent Retention</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:var(--nv-dark);border-top:1px solid var(--nv-border)">
+  <div class="section-inner">
+    <div class="section-tag">Core Competencies</div>
+    <div class="section-title">Skills Matrix</div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">▲</div>
+        <div class="skill-name">Strategic HRBP</div>
+        <div class="skill-desc">跨國 HR 策略，台灣 · 中國 · 印度。Greenfield builds × 2，矩陣組織影響力推動。</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◈</div>
+        <div class="skill-name">People Analytics</div>
+        <div class="skill-desc">自學 Power BI，HR × 財務指標整合儀表板，Hi-Po 離職前兆指標建立。</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⬡</div>
+        <div class="skill-name">HR Digital Transformation</div>
+        <div class="skill-desc">HRIS 導入、SAP HCM / SuccessFactors、Workday HCM & Payroll、25+ 模組整合部署。</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◻</div>
+        <div class="skill-name">Talent Development</div>
+        <div class="skill-desc">高潛力人才加速機制設計、績效體系重構、跨廠區晉升供應鏈建立。</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◇</div>
+        <div class="skill-name">Change Management</div>
+        <div class="skill-desc">千人規模遷廠、跨廠制度標準化、HRIS 變革管理，90%+ 員工留任率。</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:93%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">△</div>
+        <div class="skill-name">Business Partnership</div>
+        <div class="skill-desc">業務轉型人才配置、薪酬對標說服經營層、虛擬跨職能組織推動。</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:91%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="section-inner">
+    <div class="section-tag">Education & Certifications</div>
+    <div class="section-title">Credentials</div>
+    <div class="creds-grid">
+      <div class="cred-card">
+        <div class="cred-icon">MSc</div>
+        <div><div class="cred-name">Master of Human Resource Management</div><div class="cred-org">University of Warwick · Warwick Business School · 2015–2017</div></div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">BSc</div>
+        <div><div class="cred-name">Bachelor of Social Work</div><div class="cred-org">Tunghai University · Taiwan · 2009–2013</div></div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">CIPD</div>
+        <div><div class="cred-name">CIPD Level 7</div><div class="cred-org">Chartered Institute of Personnel & Development</div></div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">PMP</div>
+        <div><div class="cred-name">Project Management Professional</div><div class="cred-org">PMI · Obtained 2026</div></div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">WD</div>
+        <div><div class="cred-name">Workday HCM & Payroll</div><div class="cred-org">Workday Certification</div></div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">7.0</div>
+        <div><div class="cred-name">IELTS Academic 7.0</div><div class="cred-org">English Fluency · Mandarin Native</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section" id="contact">
+  <h2>Let's Build <span>People Strategy</span><br>That Moves Business</h2>
+  <p>Open to HRBP Manager / Senior HRBP roles in tech industry · Taiwan & Global</p>
+  <div class="contact-info">
+    <div class="contact-item"><span>✦</span> s911kpo@gmail.com</div>
+    <div class="contact-item"><span>✦</span> (886) 927-048508</div>
+    <div class="contact-item"><span>✦</span> Taichung, Taiwan</div>
+  </div>
+  <div class="cta-links">
+    <a href="mailto:s911kpo@gmail.com" class="btn-primary">Send Message</a>
+    <a href="https://www.linkedin.com/in/jung-ting-hsu/" target="_blank" class="btn-secondary">LinkedIn Profile</a>
+  </div>
+</div>
+
+<footer>
+  <span>©</span> 2026 Jung Ting Hsu (Tim) · Strategic HRBP · Taichung, Taiwan
+</footer>
+
+<script>
+const counters=document.querySelectorAll('[data-target]');
+const skillBars=document.querySelectorAll('.skill-bar-fill');
+
+const counterObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const el=entry.target;
+      const target=+el.dataset.target;
+      const suffix=el.dataset.suffix||'';
+      let current=0;
+      const step=target/40;
+      const timer=setInterval(()=>{
+        current+=step;
+        if(current>=target){current=target;clearInterval(timer)}
+        el.textContent=Math.round(current)+suffix;
+      },30);
+      counterObserver.unobserve(el);
+    }
+  });
+},{threshold:0.5});
+
+const barObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.style.transform='scaleX(1)';
+      barObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:0.3});
+
+counters.forEach(c=>counterObserver.observe(c));
+skillBars.forEach(b=>barObserver.observe(b));
+</script>
+</body>
+</html>
